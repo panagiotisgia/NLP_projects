@@ -1,61 +1,54 @@
 # NLP Assignments Repository
 
-This repository contains a series of assignments focusing on Natural Language Processing (NLP).
+Welcome to this Natural Language Processing (NLP) repository! This collection of assignments explores various aspects of NLP, from language modeling and sentiment analysis to advanced techniques like multi-layer perceptrons (MLP) and recurrent neural networks (RNN).
 
-## Assignment 1
+## Table of Contents
 
-In this assignment, we have built a bigram and trigram language model. The core functionalities implemented in this assignment include:
+1. [Assignment 1: Language Models and Spelling Correction](#assignment-1)
+2. [Assignment 2: Sentiment Analysis](#assignment-2)
+3. [Assignment 3: Sentiment Analysis with MLP](#assignment-3)
+4. [Assignment 4: Text Classification with RNN and Self-Attention MLP](#assignment-4)
 
-1. **Building n-gram language models**: Developed bigram and trigram language models using either Laplace smoothing or Kneser-Ney smoothing. All the language models were trained on a subset of a corpus, only considering words that occur at least 10 times in the training data. We've also introduced a special token `*UNK*` to handle Out-Of-Vocabulary (OOV) words.
+<a name="assignment-1"></a>
+## Assignment 1: Language Models and Spelling Correction
 
-2. **Calculating Language Cross-Entropy and Perplexity**: Computed cross-entropy and perplexity of the language models on a test subset of the corpus.
+This assignment focuses on the creation of bigram and trigram language models, computing language cross-entropy and perplexity, and creating a context-aware spelling corrector. The key aspects are:
 
-3. **Creating a Context-Aware Spelling Corrector**: Built a spelling corrector using the bigram language model, a beam search decoder, and several equations related to NLP and sequence prediction.
+- Building n-gram language models: Bigram and trigram language models are developed with Laplace or Kneser-Ney smoothing.
+- Calculating language cross-entropy and perplexity: The models are evaluated on a test subset of the corpus.
+- Creating a context-aware spelling corrector: The bigram model is leveraged to build a spelling corrector using a beam search decoder. 
 
-Below are some detailed descriptions of each task:
+[Detailed Description & Report](#assignment-1)
 
-### 1. Building n-gram language models
-Implemented bigram and trigram language models using Laplace or Kneser-Ney smoothing. The models were trained on a subset of a corpus, considering only words occurring at least 10 times. A special token `*UNK*` was introduced for OOV words.
+<a name="assignment-2"></a>
+## Assignment 2: Sentiment Analysis
 
-### 2. Calculating Language Cross-Entropy and Perplexity
-Computed the cross-entropy and perplexity of the two models on a test subset of the corpus, treating the entire test subset as a single sequence of sentences.
+In this assignment, a sentiment classifier is developed for text data. The core tasks include:
 
-### 3. Context-Aware Spelling Corrector
-A context-aware spelling corrector was developed, which handles both types of errors. A beam search decoder was utilized for this task, following the formulas from the course material.
+- Sentiment Classification: Developing a sentiment classifier for text data using a pre-existing sentiment analysis dataset with at least two classes.
+- Feature Selection and Dimensionality Reduction: Application of feature selection or dimensionality reduction methods, and exploration of pre-trained word embeddings' centroids.
+- Model Building: Implementing Logistic Regression (or Multinomial Logistic Regression for more than two classes) and optionally additional learning algorithms such as Naive Bayes, k-NN.
 
-This repository includes a detailed report that consists of the following:
+[Detailed Description & Report](#assignment-2)
 
-- A concise description of the algorithms/methods used, including any data preprocessing steps.
-- Cross-entropy and perplexity scores for each model (bigram, trigram).
-- Input/output examples demonstrating how the spelling corrector works, including interesting cases that were handled correctly or incorrectly.
+<a name="assignment-3"></a>
+## Assignment 3: Sentiment Analysis with MLP
 
-The solution leverages NLTK for sentence splitting, tokenization, counting n-grams, and computing Levenshtein distances, but the remaining functionalities were implemented from scratch.
+This assignment extends the sentiment analysis by using a Multi-Layer Perceptron (MLP) for the classification task. The main tasks in this assignment are:
 
+- MLP Classifier: Building an MLP classifier with different feature representations.
+- Hyperparameter Tuning: Tuning hyperparameters on the development subset.
+- Training and Evaluation: Monitoring the performance of the MLP during training and evaluation of the model on training, development, and test subsets.
 
-## Assignment 2
+[Detailed Description & Report](#assignment-3)
 
-In this assignment, we developed a sentiment classifier for text data, such as tweets or product reviews. Here is a high-level overview of the tasks carried out:
+<a name="assignment-4"></a>
+## Assignment 4: Text Classification with RNN and Self-Attention MLP
 
-1. **Sentiment Classification**: Developed a sentiment classifier for text data using a pre-existing sentiment analysis dataset with at least two classes. We experimented with different feature representations, including Boolean, TF, or TF-IDF features corresponding to words or n-grams.
+In this assignment, text classification is performed using advanced neural network architectures. The key tasks include:
 
-2. **Feature Selection and Dimensionality Reduction**: Applied feature selection or dimensionality reduction methods as appropriate. We also explored the use of centroids of pre-trained word embeddings.
+- RNN and Self-Attention MLP: Implementing a bi-directional stacked RNN and a self-attention MLP.
+- Hyperparameter Tuning: Tuning hyperparameters such as the number of stacked RNNs, number of hidden layers in the self-attention MLP, and dropout probability on the development subset.
+- Training and Evaluation: Monitoring the performance of the RNN during training and evaluating the model on the training, development, and test subsets.
 
-3. **Model Building**: Implemented Logistic Regression (or Multinomial Logistic Regression for more than two classes) and optionally additional learning algorithms such as Naive Bayes, k-NN.
-
-Below are more details on each of the tasks:
-
-### 1. Sentiment Classification
-A sentiment classifier was built for selected text data using a sentiment analysis dataset. The dataset consists of at least two mutually exclusive classes.
-
-### 2. Feature Selection and Dimensionality Reduction
-Feature selection or dimensionality reduction methods were applied as needed. This stage also involved using centroids of pre-trained word embeddings.
-
-### 3. Model Building
-Used Logistic Regression or Multinomial Logistic Regression for classification. We also experimented with additional learning algorithms such as Naive Bayes, k-NN.
-
-This assignment includes a detailed report that comprises:
-
-- Precision, recall, F1, and precision-recall AUC scores for each class and classifier, separately for the training, development, and test subsets.
-- Macro-averaged precision, recall, F1, precision-recall AUC scores for each classifier, separately for the training, development, and test subsets.
-- Learning curves showing macro-averaged F1 computed on the training data, the entire development subset, and the entire test subset for each classifier.
-- A concise description of the methods and datasets used, including statistics about the datasets and a description of the preprocessing steps performed.
+[Detailed Description & Report](#assignment-4)
