@@ -18,7 +18,7 @@ This assignment focuses on the creation of bigram and trigram language models, c
 - Calculating language cross-entropy and perplexity: The models are evaluated on a test subset of the corpus.
 - Creating a context-aware spelling corrector: The bigram model is leveraged to build a spelling corrector using a beam search decoder. 
 
-[Detailed Description & Report](#assignment-1)
+[Detailed Description & Report](https://github.com/panagiotisgia/NLP_projects/blob/main/1st_Assignment.ipynb)
 
 <a name="assignment-2"></a>
 ## Assignment 2: Sentiment Analysis
@@ -29,7 +29,7 @@ In this assignment, a sentiment classifier is developed for text data. The core 
 - Feature Selection and Dimensionality Reduction: Application of feature selection or dimensionality reduction methods, and exploration of pre-trained word embeddings' centroids.
 - Model Building: Implementing Logistic Regression (or Multinomial Logistic Regression for more than two classes) and optionally additional learning algorithms such as Naive Bayes, k-NN.
 
-[Detailed Description & Report](#assignment-2)
+[Detailed Description & Report](https://github.com/panagiotisgia/NLP_projects/blob/main/2nd_Assignment.ipynb)
 
 <a name="assignment-3"></a>
 ## Assignment 3: Sentiment Analysis with MLP
@@ -40,15 +40,15 @@ This assignment extends the sentiment analysis by using a Multi-Layer Perceptron
 - Hyperparameter Tuning: Tuning hyperparameters on the development subset.
 - Training and Evaluation: Monitoring the performance of the MLP during training and evaluation of the model on training, development, and test subsets.
 
-[Detailed Description & Report](#assignment-3)
+[Detailed Description & Report](https://github.com/panagiotisgia/NLP_projects/blob/main/3rd_Assignment.ipynb)
 
 <a name="assignment-4"></a>
-## Assignment 4: Text Classification with RNN and Self-Attention MLP
+## Assignment 4: Sentiment Analysis with RNN
 
-In this assignment, text classification is performed using advanced neural network architectures. The key tasks include:
+This assignment extends furhter the sentiment analysis by using three different architetures of RNNs/MLPs sentiment classifiers for the classification task. The main tasks in this assignment are:
 
 - RNN and Self-Attention MLP: Implementing a bi-directional stacked RNN and a self-attention MLP.
 - Hyperparameter Tuning: Tuning hyperparameters such as the number of stacked RNNs, number of hidden layers in the self-attention MLP, and dropout probability on the development subset.
 - Training and Evaluation: Monitoring the performance of the RNN during training and evaluating the model on the training, development, and test subsets.
 
-[Detailed Description & Report](#assignment-4)
+[Detailed Description & Report](https://github.com/panagiotisgia/NLP_projects/blob/main/4th_Assignment.ipynb)
